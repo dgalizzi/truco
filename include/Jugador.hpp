@@ -9,6 +9,10 @@ class Jugador
 		Croupier croupier_;
         Jugador();
         virtual ~Jugador();
+        
+        /* Faltaria agregar aca el nombre del jugador, y otros parametros
+         * similares a ese, no? */
+        byte nombre[24];	// 24 caracteres para el nombre
 
         virtual void PrimeraRonda() = 0;
         virtual void SegundaRonda() = 0;
