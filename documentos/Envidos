@@ -1,13 +1,11 @@
-bool recibi_envido_;
-bool recibi_real_;
-bool recibi_real_falta_;
-
-bool recibi_envido_real_;
-bool recibi_envido_real_falta_;
-bool recibi_envido_falta_;
-bool recibi_envido_envido_;
-bool recibi_envido_envido_real_;
-bool recibi_envido_envido_falta_;
-bool recibi_envido_envido_real_falta_;
-
-bool recibi_falta_;
+envido
+real_envido
+envido envido
+envido real_envido
+envido envido real_envido
+envido falta_envido
+envido envido falta_envido
+envido real_envido falta_envido
+real_envido falta_envido
+envido envido real_envido falta_envido
+falta_envido 
