@@ -20,79 +20,78 @@ bool Jugador::CantarTruco(){
 }
 
 
-bool Jugador::CantarReTruco(){
-
+bool Jugador::CantarReTruco() {
+	return croupier_->CantarReTruco();
 }
 
 
-bool Jugador::CantarValeCuatro(){
-
+bool Jugador::CantarValeCuatro() {
+	return croupier_->CantarValeCuatro();
 }
 
 
-bool Jugador::CantarEnvido(){
-
+bool Jugador::CantarEnvido() {
+	return croupier_->CantarEnvido();
 }
 
 
-bool Jugador::CantarReal(){
-
+bool Jugador::CantarReal() {
+	return croupier_->CantarReal();
 }
 
 
-bool Jugador::CantarEnvidoEnvido(){
-
+bool Jugador::CantarEnvidoEnvido() {
+	return croupier_->CantarEnvidoEnvido();
 }
 
 
-bool Jugador::CantarEnvidoReal(){
-
+bool Jugador::CantarEnvidoReal() {
+	return croupier_->CantarEnvidoReal();
 }
 
 
-bool Jugador::CantarEnvidoEnvidoReal(){
-
+bool Jugador::CantarEnvidoEnvidoReal() {
+	return croupier_->CantarEnvidoEnvidoReal();
 }
 
 
-bool Jugador::CantarEnvidoFalta(){
-
+bool Jugador::CantarEnvidoFalta() {
+	return croupier_->CantarEnvidoFalta();
 }
 
 
-bool Jugador::CantarEnvidoEnvidoFalta(){
-
+bool Jugador::CantarEnvidoEnvidoFalta() {
+	return croupier_->CantarEnvidoEnvidoFalta();
 }
 
 
-bool Jugador::CantarEnvidoRealFalta(){
-
+bool Jugador::CantarEnvidoRealFalta() {
+	return croupier_->CantarEnvidoRealFalta();
 }
 
 
-bool Jugador::CantarRealFalta(){
-
+bool Jugador::CantarRealFalta() {
+	return croupier_->CantarRealFalta();
 }
 
 
-bool Jugador::CantarEnvidoEnvidoRealFalta(){
-
+bool Jugador::CantarEnvidoEnvidoRealFalta() {
+	return croupier_->CantarEnvidoEnvidoRealFalta();
 }
 
 
-bool Jugador::CantarFalta(){
-
+bool Jugador::CantarFalta() {
+	return croupier_->CantarFalta();
 }
 
 
-bool Jugador::CantarFlor(){
-
+bool Jugador::CantarFlor() {
+	return croupier_->CantarFlor();
 }
 
 
 
-void Jugador::RecibirTruco(){
-
+void Jugador::RecibirTruco() {
 }
 
 
