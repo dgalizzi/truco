@@ -6,7 +6,7 @@ struct Carta {
 
 	Carta(palo mi_palo, byte valor, byte jerarquia);
 
-    enum palo { espada = 0, basto, oro, copa };
+    enum Palo { espada = 0, basto, oro, copa };
 
     byte valor_;
     byte jerarquia_;
