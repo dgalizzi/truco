@@ -7,9 +7,9 @@ private:
 	Carta();
 	virtual ~Carta();
 
-	enum palo { espada = 0, basto, oro, copa };
-	byte valor_;
-	byte jerarquia_;
+    enum palo { espada = 0, basto, oro, copa };
+    byte valor_;
+    byte jerarquia_;
 
 protected:
 	// esto es un comentario
