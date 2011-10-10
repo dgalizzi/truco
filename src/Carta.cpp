@@ -1,8 +1,10 @@
 #include "Carta.hpp"
 
-Carta::Carta()
+Carta::Carta(palo mi_palo, byte valor, byte jerarquia)
 {
-    //ctor
+	palo_ = mi_palo;
+	valor_ = valor;
+	jerarquia_ = jerarquia;
 }
 
 Carta::~Carta()
