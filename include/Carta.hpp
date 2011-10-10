@@ -2,16 +2,18 @@
 #define CARTA_H
 typedef unsigned char byte;
 
-struct Carta
-{
-    Carta();
-    virtual ~Carta();
+struct Carta {
+private:
+	Carta();
+	virtual ~Carta();
 
-    enum palo { espada = 0, basto, oro, copa };
-    byte valor_;
-    byte jerarquia_;
+	enum palo { espada = 0, basto, oro, copa };
+	byte valor_;
+	byte jerarquia_;
 
-    protected:
+protected:
+	// esto es un comentario
+	int algo;
 };
 
 #endif // CARTA_H
