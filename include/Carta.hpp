@@ -1,14 +1,17 @@
 #ifndef CARTA_H
 #define CARTA_H
+typedef unsigned char byte;
 
-
-class Carta
+struct Carta
 {
-    public:
-        Carta();
-        virtual ~Carta();
+    Carta();
+    virtual ~Carta();
+
+    enum palo { espada = 0, basto, oro, copa };
+    byte valor_;
+    byte jerarquia_;
+
     protected:
-    private:
 };
 
 #endif // CARTA_H
