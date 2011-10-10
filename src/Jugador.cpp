@@ -15,7 +15,7 @@ Jugador::~Jugador()
 
 
 
-bool Jugador::CantarTruco(){
+bool Jugador::CantarTruco() {
 	return croupier_->CantarTruco();
 }
 

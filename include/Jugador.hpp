@@ -4,7 +4,6 @@
 
 class Jugador
 {
-
     public:
 		Estado estado_;
 		Croupier croupier_;
@@ -14,6 +13,7 @@ class Jugador
         virtual void PrimeraRonda() = 0;
         virtual void SegundaRonda() = 0;
         virtual void TerceraRonda() = 0;
+
     protected:
         bool CantarTruco();
         bool CantarReTruco();
