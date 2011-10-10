@@ -5,11 +5,12 @@ typedef unsigned char byte;
 struct Carta {
 
 	Carta(palo mi_palo, byte valor, byte jerarquia);
+	Carta(palo mi_palo, byte valor);
 
-    enum Palo { espada = 0, basto, oro, copa };
+	enum Palo { espada = 0, basto, oro, copa };
 
-    byte valor_;
-    byte jerarquia_;
+	byte valor_;
+	byte jerarquia_;
 	palo palo_;
 
 	bool operator <= (const Carta &a_comparar) {
