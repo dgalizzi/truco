@@ -4,29 +4,33 @@
 
 class Jugador
 {
+
     public:
+		Estado estado_;
+		Croupier croupier_;
         Jugador();
         virtual ~Jugador();
 
         virtual void PrimeraRonda() = 0;
         virtual void SegundaRonda() = 0;
         virtual void TerceraRonda() = 0;
+    protected:
+        bool CantarTruco();
+        bool CantarReTruco();
+        bool CantarValeCuatro();
+        bool CantarEnvido();
+        bool CantarReal();
+		bool CantarEnvidoEnvido();
+		bool CantarEnvidoReal();
+		bool CantarEnvidoEnvidoReal();
+        bool CantarEnvidoFalta();
+        bool CantarEnvidoEnvidoFalta();
+        bool CantarEnvidoRealFalta();
+		bool CantarRealFalta();
+		bool CantarEnvidoEnvidoRealFalta();
+        bool CantarFalta();
+        bool CantarFlor();
 
-        void CantarTruco();
-        void CantarReTruco();
-        void CantarValeCuatro();
-        void CantarEnvido();
-        void CantarReal();
-		void CantarEnvidoEnvido();
-		void CantarEnvidoReal();
-		void CantarEnvidoEnvidoReal();
-        void CantarEnvidoFalta();
-        void CantarEnvidoEnvidoFalta();
-        void CantarEnvidoRealFalta();
-		void CantarRealFalta();
-		void CantarEnvidoEnvidoRealFalta();
-        void CantarFalta();
-        void CantarFlor();
 
         void RecibirTruco();
         void RecibirReTruco();
@@ -44,8 +48,9 @@ class Jugador
         void RecibirFalta();
         void RecibirFlor();
 
+        void CantarQuiero();
+        void CantarNoQuiero();
 
-    protected:
     private:
 
 };
