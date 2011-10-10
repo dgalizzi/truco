@@ -5,7 +5,6 @@ typedef unsigned char byte;
 struct Carta {
 
 	Carta(palo mi_palo, byte valor, byte jerarquia);
-	virtual ~Carta();
 
     enum palo { espada = 0, basto, oro, copa };
 

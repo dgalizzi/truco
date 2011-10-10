@@ -6,8 +6,3 @@ Carta::Carta(palo mi_palo, byte valor, byte jerarquia)
 	valor_ = valor;
 	jerarquia_ = jerarquia;
 }
-
-Carta::~Carta()
-{
-    //dtor
-}
