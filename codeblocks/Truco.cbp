@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="../include/Carta.hpp" />
+		<Unit filename="../include/Croupier.cpp" />
 		<Unit filename="../include/Croupier.hpp" />
 		<Unit filename="../include/Estado.hpp" />
 		<Unit filename="../include/Jugador.hpp" />
