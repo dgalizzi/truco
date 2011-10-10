@@ -32,8 +32,11 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="../include/Carta.hpp" />
+		<Unit filename="../include/Croupier.hpp" />
+		<Unit filename="../include/Estado.hpp" />
 		<Unit filename="../include/Jugador.hpp" />
 		<Unit filename="../src/Carta.cpp" />
+		<Unit filename="../src/Estado.cpp" />
 		<Unit filename="../src/Jugador.cpp" />
 		<Extensions>
 			<code_completion />
