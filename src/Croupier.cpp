@@ -15,10 +15,24 @@ void Croupier::Init() {
 	string f;
 	while (ifs >> f)
 	{
-		if (f == "'") continue;
+		if (f == ";") {
+			getline(ifs, f);
+			continue;
+		}
+		cout << f << endl;
+		char c;
+		do {
+			ifs.get(c);
+		} while (c == ' ' || c == '=');
+
+		f.clear();
+		ifs.get(c);
+		do {
+			f = f + c;
+			ifs.get(c);
+		} while (c != '"');
 		cout << f << endl;
 		getline(ifs, f);
-		cout << f << endl;
 	}
 }
 
