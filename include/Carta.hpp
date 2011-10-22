@@ -11,8 +11,8 @@ struct Carta {
 	Carta(Palo mi_palo, byte valor, byte jerarquia);
 	Carta(Palo mi_palo, byte valor);
 
-	Byte valor_;
-	Byte jerarquia_;
+	byte valor_;
+	byte jerarquia_;
 	Palo palo_;
 
 	bool operator <= (const Carta &a_comparar) {
@@ -42,3 +42,4 @@ struct Carta {
 };
 
 #endif // CARTA_H
+
