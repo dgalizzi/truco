@@ -22,15 +22,10 @@ class Croupier {
 
 	Jugador jugador1_, jugador2_;
 
-	void crearCartas()
-	{
-		for (int i = 1 ; i <= 12 ; i ++)
-		{
-			if (i == 8 || i == 9) continue;
-			for (int j = 0 ; j < 4 ; j ++)
-				baraja_[i*4+j] = Carta(static_cast<Carta::Palo>(j), i);
-		}
-	}
+	void Barajar();
+
+public:
+	void CrearCartas();
 
 protected:
 	friend class Jugador;
