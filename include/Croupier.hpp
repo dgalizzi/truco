@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
+#include <string>
 
 #include "Carta.hpp"
 #include "Jugador.hpp"
@@ -17,12 +19,17 @@ class Croupier {
 	// Baraja de 40 cartas
 	std::vector<Carta> baraja_;
 
+	// Map de mensajes a mostrar
+	std::map<std::string, std::string> mensajes_;
+
 	Jugador jugador1_, jugador2_;
 
+	void Init();
 	// Random shuffle sobre la baraja
 	void Barajar();
 
 public:
+	Croupier();
 	void CrearCartas();
 
 protected:
