@@ -2,6 +2,7 @@
 #define CARTA_H
 
 #include <iostream>
+#include <string>
 typedef unsigned char byte;
 
 struct Carta {
@@ -36,7 +37,8 @@ struct Carta {
 	}
 
 	void MostrarCarta() {
-		std::cout << valor_ << ":" << jerarquia_ << ":" << int(palo_) <<
+		static std::string sp[4] = {"espada", "basto", "oro", "copa"};
+		std::cout << sp[palo_] << ":" << int(valor_) << ":" << int(jerarquia_) <<
 		std::endl;
 	}
 };
