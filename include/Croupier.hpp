@@ -21,7 +21,9 @@ class Croupier {
 	void Mezclar();
 
 	Jugador jugador1_, jugador2_;
+
 public:
+
 	void crearCartas()
 	{
 		for (int i = 1 ; i <= 12 ; i ++)
