@@ -2,11 +2,11 @@
 #include <algorithm>
 
 void Croupier::CrearCartas() {
-	for (int i = 1 ; i <= 12 ; i ++)
-	{
+	for (int i = 1 ; i <= 12 ; i ++) {
 		if (i == 8 || i == 9) continue;
 		for (int j = 0 ; j < 4 ; j ++)
-			baraja_[i*4+j] = Carta(static_cast<Carta::Palo>(j), i);
+				baraja_.push_back(Carta(static_cast<Carta::Palo>(j), i));
+				baraja_.back().MostrarCarta();
 	}
 }
 

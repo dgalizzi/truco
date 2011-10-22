@@ -1,8 +1,8 @@
 #ifndef CROUPIER_H
 #define CROUPIER_H
 
+#include <iostream>
 #include <vector>
-using std::vector;
 
 #include "Carta.hpp"
 #include "Jugador.hpp"
@@ -15,7 +15,7 @@ class Croupier {
 	bool cantora_;
 
 	// Baraja de 40 cartas
-	vector<Carta> baraja_;
+	std::vector<Carta> baraja_;
 
 	// Random shuffle sobre la baraja
 	void Mezclar();

@@ -1,5 +1,7 @@
 #ifndef CARTA_H
 #define CARTA_H
+
+#include <iostream>
 typedef unsigned char byte;
 
 struct Carta {
@@ -31,6 +33,11 @@ struct Carta {
 
 	bool operator == (const Carta &a_comparar) {
 		return jerarquia_ == a_comparar.jerarquia_;
+	}
+
+	void MostrarCarta() {
+		std::cout << valor_ << ":" << jerarquia_ << ":" << int(palo_) <<
+		std::endl;
 	}
 };
 
