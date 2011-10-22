@@ -1,23 +1,27 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
 
+#include "Estado.hpp"
 #include <string>
+
+class Croupier;
 
 class Jugador
 {
 	public:
 	Estado estado_;
-	Croupier croupier_;
+	Croupier *croupier_;
 	Jugador();
-	virtual ~Jugador();
+	Jugador(Croupier *);
+	~Jugador();
 
 	/* Faltaria agregar aca el nombre del jugador, y otros parametros
 	 * similares a ese, no? */
-	std::string nombre_;	// 24 caracteres para el nombre
+	std::string nombre_;
 
-	virtual void PrimeraRonda() = 0;
-	virtual void SegundaRonda() = 0;
-	virtual void TerceraRonda() = 0;
+	virtual void PrimeraRonda() {};
+	virtual void SegundaRonda() {};
+	virtual void TerceraRonda() {};
 
 	protected:
 	bool CantarTruco();

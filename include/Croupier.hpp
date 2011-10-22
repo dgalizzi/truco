@@ -5,6 +5,7 @@
 using std::vector;
 
 #include "Carta.hpp"
+#include "Jugador.hpp"
 
 class Croupier {
 	// Cuantos puntos a ganar
@@ -31,6 +32,23 @@ class Croupier {
 		}
 	}
 
+protected:
+	friend class Jugador;
+	bool CantarTruco();
+	bool CantarReTruco();
+	bool CantarValeCuatro();
+	bool CantarEnvido();
+	bool CantarReal();
+	bool CantarEnvidoEnvido();
+	bool CantarEnvidoReal();
+	bool CantarEnvidoEnvidoReal();
+	bool CantarEnvidoFalta();
+	bool CantarEnvidoEnvidoFalta();
+	bool CantarEnvidoRealFalta();
+	bool CantarRealFalta();
+	bool CantarEnvidoEnvidoRealFalta();
+	bool CantarFalta();
+	bool CantarFlor();
 
 };
 

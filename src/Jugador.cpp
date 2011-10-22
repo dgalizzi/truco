@@ -1,11 +1,13 @@
 #include "Jugador.hpp"
+#include "Croupier.hpp"
 
 Jugador::Jugador(Croupier* croupier)
-{
-    croupier_ = croupier;
-}
+:croupier_(croupier)
+{ }
 
-
+Jugador::Jugador()
+:croupier_(NULL)
+{ }
 
 Jugador::~Jugador()
 {
