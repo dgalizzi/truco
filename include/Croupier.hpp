@@ -17,11 +17,9 @@ class Croupier {
 	// Baraja de 40 cartas
 	std::vector<Carta> baraja_;
 
-	// Random shuffle sobre la baraja
-	void Mezclar();
-
 	Jugador jugador1_, jugador2_;
 
+	// Random shuffle sobre la baraja
 	void Barajar();
 
 public:
