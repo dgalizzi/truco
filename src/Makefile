@@ -16,19 +16,19 @@ main.o: main.cpp
 	@echo "Compilando main.cpp"
 	$(CC) $(CFLAGS) main.cpp 
 
-Croupier.o: Croupier.cpp
+Croupier.o: ../include/Croupier.hpp
 	@echo "Compilando Croupier.cpp"
 	$(CC) $(CFLAGS) Croupier.cpp
 
-Jugador.o: Jugador.cpp
+Jugador.o: ../include/Jugador.hpp
 	@echo "Compilando Jugador.cpp"
 	$(CC) $(CFLAGS) Jugador.cpp
 
-Carta.o: Carta.cpp
+Carta.o: ../include/Carta.hpp
 	@echo "Compilando Carta.cpp"
 	$(CC) $(CFLAGS) Carta.cpp
 
-Estado.o: Estado.cpp
+Estado.o: ../include/Estado.hpp
 	@echo "Compilando Estado.cpp"
 	$(CC) $(CFLAGS) Estado.cpp
 
@@ -37,3 +37,5 @@ clean: #limpieza
 	rm -rf *.o truco
 	@echo "Limpiando binario"
 	rm -rf $(BINDIR)/$(OUTFILE)
+
+ca: clean all

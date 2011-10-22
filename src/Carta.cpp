@@ -27,3 +27,4 @@ Carta::Carta(Palo palo, byte valor) : palo_(palo), valor_(valor) {
 	if (palo == oro && valor == 7)
 		jerarquia_ = 11;
 }
+
