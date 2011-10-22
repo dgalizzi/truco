@@ -1,13 +1,25 @@
 #include "Croupier.hpp"
 #include <algorithm>
 #include <fstream>
+#include <iostream>
 
 Croupier::Croupier() {
 	Init();
 }
 
 void Croupier::Init() {
-	std::ifstream ifs("../config/mensajes.cfg");
+	using namespace std;
+	ifstream ifs("config/mensajes.cfg");
+	if (!ifs.is_open()) cout << "ERROR AL ABRIR ARCHIVO" << endl;
+
+	string f;
+	while (ifs >> f)
+	{
+		if (f == "'") continue;
+		cout << f << endl;
+		getline(ifs, f);
+		cout << f << endl;
+	}
 }
 
 void Croupier::CrearCartas() {

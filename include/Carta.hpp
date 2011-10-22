@@ -37,9 +37,9 @@ struct Carta {
 	}
 
 	void MostrarCarta() {
-		static std::string sp[4] = {"espada", "basto", "oro", "copa"};
-		std::cout << sp[palo_] << ":" << int(valor_) << ":" << int(jerarquia_) <<
-		std::endl;
+		//static std::string sp[4] = {"espada", "basto", "oro", "copa"};
+		//std::cout << sp[palo_] << ":" << int(valor_) << ":" << int(jerarquia_) <<
+		//std::endl;
 	}
 };
 
