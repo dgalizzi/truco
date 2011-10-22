@@ -30,4 +30,5 @@ Estado.o: Estado.cpp
 	$(CC) $(CFLAGS) Estado.cpp
 
 clean: #limpieza
+	@echo "Limpiando objetos"
 	rm -rf *.o truco
